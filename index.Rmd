@@ -206,7 +206,7 @@ par(mfrow=c(1,3))
     xlim=c(1900 ,2005 ),
     ylim=c(0,budgetMax),
     xlab="Year", ylab="Budget ($)", 
-    main="Mean Budget of all Movies")
+    main="Action Movies")
 
   if (length(xx2)>0) {
     fit <- lm(budget~poly(year,3,raw=TRUE), data=df2)
@@ -218,7 +218,7 @@ par(mfrow=c(1,3))
     xlim=c(1900 ,2005 ),
     ylim=c(0,budgetMax),
     xlab="Year", ylab="Budget ($)", 
-    main="Mean Budget of all Movies")
+    main="Comedy Movies")
 
   if (length(xx3)>0) {
     fit <- lm(budget~poly(year,3,raw=TRUE), data=df3)
@@ -230,7 +230,7 @@ par(mfrow=c(1,3))
     xlim=c(1900 ,2005 ),
     ylim=c(0,budgetMax),
     xlab="Year", ylab="Budget ($)", 
-    main="Mean Budget of all Movies")
+    main="Romantic Movies")
 
   if (length(xx4)>0) {
     fit <- lm(budget~poly(year,3,raw=TRUE), data=df4)
